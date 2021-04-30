@@ -1,9 +1,14 @@
 import React from 'react';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   return (
     <div>
-      <h1>Search Bar will go here</h1>
+      <h2>Search for movies:</h2>
+      <input
+        value={props.value}
+        onChange={(event) => props.setSearchValue(event.target.value)}
+        placeholder="Type to search..."
+      ></input>
     </div>
   );
 };
