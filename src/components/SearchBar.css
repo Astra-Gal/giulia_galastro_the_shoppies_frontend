@@ -1,0 +1,16 @@
+h2 {
+  font-family: 'Barrio', sans-serif;
+  margin: 10px;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  font-family: 'Roboto Slab', serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}

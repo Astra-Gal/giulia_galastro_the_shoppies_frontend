@@ -1,8 +1,9 @@
 import React from 'react';
+import './SearchBar.css';
 
 const SearchBar = (props) => {
   return (
-    <div>
+    <div className="SearchBar">
       <h2>Search for movies:</h2>
       <input
         value={props.value}
