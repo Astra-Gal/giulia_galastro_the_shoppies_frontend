@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MovieList = ({ movies }) => {
+const MovieList = ({ movies, handleNomination }) => {
   if (!movies) {
     return <p>Loading...</p>;
   }
@@ -9,6 +9,7 @@ const MovieList = ({ movies }) => {
     return (
       <li key={index}>
         <img src={movie.Poster} alt={movie.Title} />
+        <button onClick={handleNomination}>Nominate</button>
       </li>
     );
   });
