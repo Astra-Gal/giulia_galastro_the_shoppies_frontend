@@ -12,6 +12,7 @@ ul {
 
 li {
   margin: 5px;
+  padding: 5px;
 }
 
 .image-wrapper {
@@ -19,31 +20,39 @@ li {
   transition: transform 0.2s;
 }
 
-.image-wrapper:hover button {
-  opacity: 1;
+.image-wrapper:hover {
+  transform: scale(1.1);
+  filter: saturate(1);
+  box-shadow: 0 0 7px rgb(58, 216, 71);
 }
-.image-wrapper button {
+
+.image-wrapper .nominate-wrapper {
   position: absolute;
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
+  opacity: 1;
+  color: aquamarine;
+  background: rgba(25, 31, 24, 0.8);
+  width: 110px;
   transition: 0.5s ease;
   bottom: 0;
   font-size: 20px;
+  border-radius: 10px;
   padding: 20px;
   text-align: center;
+}
+
+.image-wrapper:hover .nominate-wrapper {
+  opacity: 1;
 }
 
 img {
   border-radius: 10px;
   object-fit: cover;
-  max-width: 200px;
+  width: 150px;
+  height: 225px;
   filter: saturate(0);
   transition: 0.3s ease all;
 }
 
 img:hover {
-  transform: scale(1.1);
   filter: saturate(1);
-  box-shadow: 0 0 7px rgb(58, 216, 71);
 }
