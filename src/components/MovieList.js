@@ -1,4 +1,5 @@
 import React from 'react';
+import './MovieList.css';
 
 const MovieList = ({ movies, handleNomination }) => {
   if (!movies) {
@@ -8,16 +9,18 @@ const MovieList = ({ movies, handleNomination }) => {
   const movieNodes = movies.map((movie, index) => {
     return (
       <li key={index}>
-        <img src={movie.Poster} alt={movie.Title} />
-        <button onClick={handleNomination}>Nominate</button>
+        <div className="image-wrapper">
+          <img src={movie.Poster} alt={movie.Title} />
+          <button onClick={handleNomination}>Nominate</button>
+        </div>
       </li>
     );
   });
 
   return (
-    <>
+    <div className="MovieList">
       <ul>{movieNodes}</ul>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,49 @@
+.MovieList {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+li {
+  margin: 5px;
+}
+
+.image-wrapper {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-wrapper:hover button {
+  opacity: 1;
+}
+.image-wrapper button {
+  position: absolute;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 200px;
+  filter: saturate(0);
+  transition: 0.3s ease all;
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: saturate(1);
+  box-shadow: 0 0 7px rgb(58, 216, 71);
+}
