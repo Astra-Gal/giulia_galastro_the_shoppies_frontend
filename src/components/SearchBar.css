@@ -15,6 +15,13 @@ input {
   outline: none;
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: 0.2s ease all;
+}
+
+input:hover {
+  box-shadow: 0 0 7px rgb(237, 128, 81);
+  border: 1px solid rgb(199, 84, 42);
+  transition: 0.2s ease all;
 }
 
 input:focus {
