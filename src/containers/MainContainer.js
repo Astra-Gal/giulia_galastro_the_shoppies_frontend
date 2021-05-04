@@ -4,10 +4,10 @@ import MovieContainer from './MovieContainer';
 
 const MainContainer = () => {
   return (
-    <>
+    <div>
       <Title />
       <MovieContainer />
-    </>
+    </div>
   );
 };
 
