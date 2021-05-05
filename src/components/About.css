@@ -1,0 +1,16 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about p {
+  font-family: 'Roboto Slab', serif;
+  font-size: smaller;
+}
+
+.about p a {
+  text-decoration: none;
+  color: rgb(21, 107, 21);
+}
