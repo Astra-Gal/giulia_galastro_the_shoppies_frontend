@@ -5,16 +5,22 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <div>
-      <nav className="navbar">
-        <ul>
+      <nav>
+        <ul className="navbar">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="navlink">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="navlink">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/my-nominations">My Noms</Link>
+            <Link to="/my-nominations" className="navlink">
+              My Noms
+            </Link>
           </li>
         </ul>
       </nav>

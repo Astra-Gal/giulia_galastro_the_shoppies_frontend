@@ -1,0 +1,19 @@
+/* smaller screens
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+/* @media only screen and (min-width: 450px) */
+ul.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: dotted 2px black;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+}
