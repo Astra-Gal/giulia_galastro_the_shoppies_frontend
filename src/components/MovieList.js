@@ -1,9 +1,8 @@
 import React from 'react';
 import './MovieList.css';
 
-const MovieList = ({ movies }) => {
-  // ,handleNomination
-  if (!movies) {
+const MovieList = ({ movies, handleNomination, loading }) => {
+  if (loading) {
     return <p>Loading...</p>;
   }
   // filter movies to remove any that don't have link to a poster
@@ -14,7 +13,7 @@ const MovieList = ({ movies }) => {
   const movieNodes = moviesWithPosters.map((movie, index) => {
     return (
       <li key={index}>
-        <div className="image-wrapper">
+        <div onClick={() => handleNomination(movie)} className="image-wrapper">
           <img src={movie.Poster} alt={movie.Title} />
           <div className="nominate-wrapper">
             Nominate
