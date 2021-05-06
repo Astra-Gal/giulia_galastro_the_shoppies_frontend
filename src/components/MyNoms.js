@@ -1,7 +1,7 @@
 import React from 'react';
 import './MyNoms.css';
 
-const MyNoms = ({ nominees, loading }) => {
+const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -9,7 +9,10 @@ const MyNoms = ({ nominees, loading }) => {
   const nomineeNodes = nominees.map((nominee, index) => {
     return (
       <li key={index}>
-        <div className="image-wrapper">
+        <div
+          onClick={() => handleRemoveNomination(nominee)}
+          className="image-wrapper"
+        >
           <img src={nominee.Poster} alt={nominee.Title} />
           <div className="nominate-wrapper">Remove Nom?</div>
         </div>
