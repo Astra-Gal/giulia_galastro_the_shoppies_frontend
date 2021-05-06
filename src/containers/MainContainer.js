@@ -35,14 +35,22 @@ const MainContainer = () => {
   }, [searchValue]);
 
   const handleNomination = (movie) => {
-    const newNomineesList = [...nominees, movie];
-    // if nominees.length <= 4
-    setNominees(newNomineesList);
-    console.log(nominees);
+    // check whether movie has already been added so it can't be added twice
+    const alreadyInNominees = nominees.some(
+      (nominee) => nominee.imdbID === movie.imdbID,
+    );
+    // make sure we haven't exceeded the maximum 5 nominations yet
+    if (nominees.length <= 4 && !alreadyInNominees) {
+      setNominees([movie, ...nominees]);
+    }
   };
 
-  // I'll need a handleDeleteNomination function, and
-  //that needs to get passed to MyNoms
+  const handleRemoveNomination = (nomineeToRemove) => {
+    const newNomineesList = nominees.filter(
+      (nominee) => nominee.imdbID !== nomineeToRemove.imdbID,
+    );
+    setNominees(newNomineesList);
+  };
 
   return (
     <Router>
@@ -57,7 +65,7 @@ const MainContainer = () => {
           <Route path="/my-nominations">
             <MyNoms
               nominees={nominees}
-              // handleNominationDelete
+              handleRemoveNomination={handleRemoveNomination}
               loading={loading}
             />
           </Route>
