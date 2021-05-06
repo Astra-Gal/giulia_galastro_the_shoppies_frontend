@@ -1,0 +1,9 @@
+.myNoms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Barrio', sans-serif;
+}

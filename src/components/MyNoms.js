@@ -1,4 +1,5 @@
 import React from 'react';
+import './MyNoms.css';
 
 const MyNoms = ({ nominees, loading }) => {
   if (loading) {
@@ -18,7 +19,7 @@ const MyNoms = ({ nominees, loading }) => {
 
   return (
     <div className="myNoms">
-      <h4>My noms!!</h4>
+      <h3>My noms!!</h3>
       <div className="MovieList">
         <ul>{nomineeNodes}</ul>
       </div>
