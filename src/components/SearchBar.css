@@ -19,8 +19,8 @@ input {
 }
 
 input:hover {
-  box-shadow: 0 0 7px rgb(237, 128, 81);
-  border: 1px solid rgb(199, 84, 42);
+  box-shadow: 0 0 7px rgb(247, 139, 92);
+  border: 1px solid rgb(250, 156, 122);
   transition: 0.2s ease all;
 }
 
