@@ -8,8 +8,3 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-/* .movie-app > .row {
-	overflow-x: auto;
-	flex-wrap: nowrap;
-} */
