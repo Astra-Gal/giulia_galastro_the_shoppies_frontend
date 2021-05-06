@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Title from '../components/Title';
 import About from '../components/About';
@@ -72,6 +72,7 @@ const MainContainer = () => {
           <Route path="/">
             <MovieContainer
               movies={movies}
+              nominees={nominees}
               handleNomination={handleNomination}
               searchValue={searchValue}
               setSearchValue={setSearchValue}
