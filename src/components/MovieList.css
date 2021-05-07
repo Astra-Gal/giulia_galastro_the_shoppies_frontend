@@ -6,7 +6,6 @@
 ul {
   list-style: none;
   display: flex;
-  overflow-x: auto;
   flex-wrap: nowrap;
 }
 
@@ -45,7 +44,6 @@ li {
   transition: 0.5s ease;
   bottom: 0;
   font-size: 15px;
-  border-radius: 0 0 10px 10px;
   padding: 20px;
   font-family: 'Roboto Slab', serif;
 }
@@ -55,7 +53,6 @@ li {
 }
 
 img {
-  border-radius: 10px;
   object-fit: cover;
   width: 150px;
   height: 225px;
