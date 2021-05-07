@@ -10,6 +10,7 @@ ul.navbar {
   display: flex;
   justify-content: space-between;
   border: dotted 2px black;
+  padding-inline-start: 0px;
 }
 
 .navlink {

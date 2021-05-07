@@ -5,5 +5,7 @@
 }
 
 h3 {
-  font-family: 'Barrio', sans-serif;
+  font-family: 'Barrio', serif;
+  margin-block-start: 0.1rem;
+  margin-block-end: 0.1rem;
 }
