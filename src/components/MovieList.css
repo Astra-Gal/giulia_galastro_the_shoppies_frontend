@@ -20,13 +20,23 @@ li {
   transition: transform 0.2s;
 }
 
-.image-wrapper:hover {
+.image-wrapper:hover .green-glow {
   transform: scale(1.1);
   filter: saturate(1);
   box-shadow: 0 0 7px rgb(58, 216, 71);
 }
 
+.image-wrapper:hover .red-glow {
+  transform: scale(1.1);
+  filter: saturate(1);
+  box-shadow: 0 0 7px red;
+}
+
 .image-wrapper .nominate-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   opacity: 0;
   color: white;
@@ -34,14 +44,10 @@ li {
   width: 110px;
   transition: 0.5s ease;
   bottom: 0;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 0 0 10px 10px;
   padding: 20px;
-  font-family: 'Roboto Slab', cursive;
-  font-size: smaller;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Roboto Slab', serif;
 }
 
 .image-wrapper:hover .nominate-wrapper {
@@ -59,4 +65,8 @@ img {
 
 img:hover {
   filter: saturate(1);
+}
+
+.titleYear {
+  font-size: 10px;
 }
