@@ -34,14 +34,11 @@ const MainContainer = () => {
       });
   }, [searchValue]);
 
-  const alreadyInNominees = (movie) => {
-    // check the nomination status of a movie
-    return nominees.some((nominee) => nominee.imdbID === movie.imdbID);
-  };
-
   const handleNomination = (movie) => {
     // check whether movie has already been added so it can't be added twice
-    alreadyInNominees(movie);
+    const alreadyInNominees = nominees.some(
+      (nominee) => nominee.imdbID === movie.imdbID,
+    );
     // make sure we haven't exceeded the maximum 5 nominations yet
     if (nominees.length <= 4 && !alreadyInNominees) {
       setNominees([movie, ...nominees]);
@@ -49,7 +46,6 @@ const MainContainer = () => {
   };
 
   const handleRemoveNomination = (nomineeToRemove) => {
-    // remove a movie from the array of nominated movies
     const newNomineesList = nominees.filter(
       (nominee) => nominee.imdbID !== nomineeToRemove.imdbID,
     );
