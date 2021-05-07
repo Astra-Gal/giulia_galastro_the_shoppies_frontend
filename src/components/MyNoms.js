@@ -14,10 +14,14 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
           onClick={() => handleRemoveNomination(nominee)}
           className="image-wrapper"
         >
-          <img src={nominee.Poster} alt={nominee.Title} />
-          <div className="nominate-wrapper">Remove Nom?</div>
-          <div className="titleYear">
-            {movie.Title}({movie.Year})
+          <div className="red-glow">
+            <img src={nominee.Poster} alt={nominee.Title} />
+            <div className="nominate-wrapper">
+              Remove Nom?
+              <div className="titleYear">
+                {nominee.Title}({nominee.Year})
+              </div>
+            </div>
           </div>
         </div>
       </li>
@@ -26,21 +30,9 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
 
   return (
     <div className="myNoms">
-      {nominees.length === 0 ? (
-        <>
-          <h3>No noms yet!!</h3>
-          <Link to="/" className="nomLink">
-            Search for movies to nominate <span> &#10154;</span>
-          </Link>
-        </>
-      ) : (
-        <>
-          <h3>My noms!!</h3>
-          <div className="MovieList">
-            <ul>{nomineeNodes}</ul>
-          </div>
-        </>
-      )}
+      <div className="MovieList">
+        <ul>{nomineeNodes}</ul>
+      </div>
     </div>
   );
 };
