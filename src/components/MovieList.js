@@ -17,29 +17,57 @@ const MovieList = ({
   });
 
   const movieNodes = moviesWithPosters.map((movie, index) => {
-    return (
-      <li key={index}>
-        <div onClick={() => handleNomination(movie)} className="image-wrapper">
-          <img src={movie.Poster} alt={movie.Title} />
-          <div className="nominate-wrapper">
-            Nominate
-            <svg
-              xmlns="http://www.w3.org/200/svg"
-              xlink="http://www.w3.org/1999/xlink"
-              width="40px"
-              height="40px"
-              viewBox="0 0 450 100"
-            >
-              <polygon
-                fill="white"
-                stroke="black"
-                points="279,5 294,35 328,40 303,62 309,94 279,79 248,94 254,62 230,39 263,35"
-              />
-            </svg>
-          </div>
-        </div>
-      </li>
+    const alreadyInNominees = nominees.some(
+      (nominee) => nominee.imdbID === movie.imdbID,
     );
+    if (!alreadyInNominees) {
+      return (
+        <li key={index}>
+          <div
+            onClick={() => handleNomination(movie)}
+            className="image-wrapper"
+          >
+            <img src={movie.Poster} alt={movie.Title} />
+            <div className="nominate-wrapper">
+              Nominate
+              <svg
+                xmlns="http://www.w3.org/200/svg"
+                xlink="http://www.w3.org/1999/xlink"
+                width="40px"
+                height="40px"
+                viewBox="0 0 450 100"
+              >
+                <polygon
+                  fill="white"
+                  stroke="black"
+                  points="279,5 294,35 328,40 303,62 309,94 279,79 248,94 254,62 230,39 263,35"
+                />
+              </svg>
+              <div className="titleYear">
+                {movie.Title}({movie.Year})
+              </div>
+            </div>
+          </div>
+        </li>
+      );
+    } else {
+      return (
+        <li key={index}>
+          <div
+            onClick={() => handleRemoveNomination(movie)}
+            className="image-wrapper"
+          >
+            <img src={movie.Poster} alt={movie.Title} />
+            <div className="nominate-wrapper">
+              Remove Nom?{' '}
+              <div className="titleYear">
+                {movie.Title}({movie.Year})
+              </div>
+            </div>
+          </div>
+        </li>
+      );
+    }
   });
 
   return (
