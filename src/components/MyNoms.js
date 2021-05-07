@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './MyNoms.css';
 
 const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
@@ -22,10 +23,21 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
 
   return (
     <div className="myNoms">
-      <h3>My noms!!</h3>
-      <div className="MovieList">
-        <ul>{nomineeNodes}</ul>
-      </div>
+      {nominees.length === 0 ? (
+        <>
+          <h3>No noms yet!!</h3>
+          <Link to="/" className="nomLink">
+            Search for movies to nominate <span> &#10154;</span>
+          </Link>
+        </>
+      ) : (
+        <>
+          <h3>My noms!!</h3>
+          <div className="MovieList">
+            <ul>{nomineeNodes}</ul>
+          </div>
+        </>
+      )}
     </div>
   );
 };
