@@ -1,7 +1,13 @@
 import React from 'react';
 import './MovieList.css';
 
-const MovieList = ({ movies, handleNomination, loading }) => {
+const MovieList = ({
+  movies,
+  nominees,
+  handleNomination,
+  handleRemoveNomination,
+  loading,
+}) => {
   if (loading) {
     return <p>Loading...</p>;
   }

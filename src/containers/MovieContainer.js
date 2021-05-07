@@ -7,6 +7,7 @@ const MovieContainer = ({
   movies,
   nominees,
   handleNomination,
+  handleRemoveNomination,
   searchValue,
   setSearchValue,
   loading,
@@ -17,7 +18,9 @@ const MovieContainer = ({
         <SearchBar searchValue={searchValue} setSearchValue={setSearchValue} />
         <MovieList
           movies={movies}
+          nominees={nominees}
           handleNomination={handleNomination}
+          handleRemoveNomination={handleRemoveNomination}
           loading={loading}
         />
       </>
