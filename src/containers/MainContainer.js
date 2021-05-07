@@ -17,7 +17,7 @@ const MainContainer = () => {
     setLoading(true);
 
     fetch(
-      `http://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_OMDB_KEY}`,
+      `https://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_OMDB_KEY}`,
     )
       .then((res) => res.json())
       .then((data) => {
