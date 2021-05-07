@@ -16,6 +16,9 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
         >
           <img src={nominee.Poster} alt={nominee.Title} />
           <div className="nominate-wrapper">Remove Nom?</div>
+          <div className="titleYear">
+            {movie.Title}({movie.Year})
+          </div>
         </div>
       </li>
     );
