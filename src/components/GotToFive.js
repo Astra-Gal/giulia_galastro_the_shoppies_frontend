@@ -7,6 +7,8 @@ const GotToFive = () => {
     <div className="gotToFive">
       <h2>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -20,6 +22,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -33,6 +37,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -46,6 +52,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -59,6 +67,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -73,6 +83,8 @@ const GotToFive = () => {
         </svg>
         Got to five!
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -86,6 +98,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -99,6 +113,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -112,6 +128,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
@@ -125,6 +143,8 @@ const GotToFive = () => {
           />
         </svg>
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/200/svg"
           xlink="http://www.w3.org/1999/xlink"
           width="40px"
