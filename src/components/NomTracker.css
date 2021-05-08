@@ -1,5 +1,9 @@
 .NomTracker {
-  background-color: lightslategray;
+  background: linear-gradient(
+    136deg,
+    rgba(149, 191, 71, 255),
+    rgba(94, 142, 62, 255)
+  );
   color: whitesmoke;
   display: flex;
   justify-content: center;
