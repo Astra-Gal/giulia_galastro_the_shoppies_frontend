@@ -11,10 +11,13 @@
   flex-direction: column;
   flex-wrap: nowrap;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 li {
   margin: 0 10px 7px 0;
+  scroll-snap-align: end;
 }
 
 .image-wrapper {
