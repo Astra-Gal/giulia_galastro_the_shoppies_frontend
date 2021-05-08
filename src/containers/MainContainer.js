@@ -16,7 +16,9 @@ const MainContainer = () => {
 
   useEffect(() => {
     setLoading(true);
-
+    // Please see 'A note on security' in README.md,
+    // about the implications of hiding an API in a .env file
+    // in a React app
     fetch(
       `https://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_OMDB_KEY}`,
     )
