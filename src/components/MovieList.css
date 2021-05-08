@@ -1,17 +1,20 @@
 .MovieList {
   display: flex;
   justify-content: center;
+  margin: 5px;
 }
 
-ul {
+.MovieList > ul {
   list-style: none;
   display: flex;
+  padding: 0;
+  flex-direction: column;
   flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 li {
-  margin: 5px;
-  padding: 5px;
+  margin: 0 10px 7px 0;
 }
 
 .image-wrapper {
@@ -66,4 +69,10 @@ img:hover {
 
 .titleYear {
   font-size: 10px;
+}
+
+@media only screen and (min-width: 450px) {
+  .MovieList > ul {
+    flex-direction: row;
+  }
 }
