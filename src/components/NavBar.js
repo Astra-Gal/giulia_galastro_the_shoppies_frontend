@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GitHubLogo from '../assets/GitHubLogo.png';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -25,9 +26,10 @@ const NavBar = () => {
           <li>
             <a
               href="https://github.com/Astra-Gal/giulia_galastro_the_shoppies_frontend"
-              className="navlink"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              See Code
+              <img src={GitHubLogo} className="GitHubLogo" />
             </a>
           </li>
         </ul>
