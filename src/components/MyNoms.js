@@ -31,7 +31,7 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
   if (nominees.length === 0) {
     return (
       <div className="myNoms">
-        <h4>You haven't nominated anything yet!</h4>
+        <h3>You haven't nominated anything yet!</h3>
         <Link to="/" className="nomLink">
           Find some movies to nominate <span> &#10154;</span>
         </Link>
