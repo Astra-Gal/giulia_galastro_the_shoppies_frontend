@@ -11,9 +11,10 @@ const MovieList = ({
   if (loading) {
     return <p>Loading...</p>;
   }
-  // filter movies to remove any that don't have link to a poster
+  // filter results to remove any that don't have link to a poster, or
+  // that are not movies (e.g. tv series)
   const moviesWithPosters = movies.filter((movie) => {
-    return movie.Poster.indexOf('http') !== -1;
+    return movie.Poster.indexOf('http') !== -1 && movie.Type === 'movie';
   });
 
   const movieNodes = moviesWithPosters.map((movie, index) => {
