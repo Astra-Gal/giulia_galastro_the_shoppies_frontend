@@ -19,7 +19,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/my-nominations" className="navlink">
-              My Nominations
+              My Picks
             </Link>
           </li>
           <li>
@@ -27,7 +27,7 @@ const NavBar = () => {
               href="https://github.com/Astra-Gal/giulia_galastro_the_shoppies_frontend"
               className="navlink"
             >
-              See on GitHub
+              See Code
             </a>
           </li>
         </ul>
