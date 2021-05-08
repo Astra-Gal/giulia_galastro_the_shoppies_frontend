@@ -9,6 +9,7 @@
 ul.navbar {
   display: flex;
   justify-content: space-between;
+  list-style: none;
   border: dotted 2px black;
   padding-inline-start: 0px;
 }
