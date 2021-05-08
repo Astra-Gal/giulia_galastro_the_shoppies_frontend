@@ -10,6 +10,7 @@ ul.navbar {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding: 5px;
   border-bottom: dotted 2px black;
   padding-inline-start: 0px;
 }
@@ -18,4 +19,9 @@ ul.navbar {
   text-decoration: none;
   color: black;
   font-family: 'Roboto Slab', serif;
+}
+
+.GitHubLogo {
+  height: 20px;
+  width: 20px;
 }
