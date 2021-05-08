@@ -8,9 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto Slab', serif;
   margin: 10px 0 20px 0;
   height: 30px;
+}
+
+.NomTracker > h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 600px) {
