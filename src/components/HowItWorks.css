@@ -7,6 +7,7 @@
 
 .HowItWorks > h2 {
   font-family: 'Roboto Slab', serif;
+  margin-block: 0;
 }
 
 .HowItWorks > ol > li {
