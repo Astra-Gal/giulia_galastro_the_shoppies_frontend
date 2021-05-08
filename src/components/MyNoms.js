@@ -28,13 +28,35 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
     );
   });
 
-  return (
-    <div className="myNoms">
-      <div className="MovieList">
-        <ul>{nomineeNodes}</ul>
+  if (nominees.length === 0) {
+    return (
+      <div className="myNoms">
+        <h4>You haven't nominated anything yet!</h4>
+        <Link to="/" className="nomLink">
+          Find some movies to nominate <span> &#10154;</span>
+        </Link>
       </div>
-    </div>
-  );
+    );
+  } else if (nominees.length <= 4) {
+    return (
+      <div className="myNoms">
+        <Link to="/" className="nomLink">
+          Find more movies to nominate <span> &#10154;</span>
+        </Link>
+        <div className="MovieList">
+          <ul>{nomineeNodes}</ul>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="myNoms">
+        <div className="MovieList">
+          <ul>{nomineeNodes}</ul>
+        </div>
+      </div>
+    );
+  }
 };
 
 export default MyNoms;
