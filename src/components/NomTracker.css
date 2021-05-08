@@ -1,4 +1,16 @@
 .NomTracker {
   background-color: lightslategray;
   color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+  margin: 10px 0 20px 0;
+  height: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .NomTracker {
+    margin: 10px 0 40px 0;
+  }
 }
