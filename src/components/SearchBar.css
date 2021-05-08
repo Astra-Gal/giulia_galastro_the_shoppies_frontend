@@ -1,13 +1,14 @@
-h2 {
-  font-family: 'Barrio', sans-serif;
-  margin: 10px 10px 15px 0;
-}
-
 .SearchBar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 5px;
+}
+
+.SearchBar > h3 {
+  font-family: 'Barrio', sans-serif;
+  font-size: 22px;
+  margin: 10px 10px 15px 0;
 }
 
 input {

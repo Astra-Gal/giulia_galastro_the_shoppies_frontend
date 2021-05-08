@@ -4,7 +4,7 @@ import './SearchBar.css';
 const SearchBar = (props) => {
   return (
     <div className="SearchBar">
-      <h2>Search for movies:</h2>
+      <h3>Search for movies:</h3>
       <input
         value={props.value}
         onChange={(event) => props.setSearchValue(event.target.value)}
