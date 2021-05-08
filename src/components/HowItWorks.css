@@ -1,0 +1,16 @@
+.HowItWorks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HowItWorks > h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.HowItWorks > ol > li {
+  max-width: 25em;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+}
