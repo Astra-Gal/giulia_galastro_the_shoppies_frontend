@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar';
 import Title from '../components/Title';
 import About from '../components/About';
 import MyNoms from '../components/MyNoms';
+import NomTracker from '../components/NomTracker';
 import MovieContainer from './MovieContainer';
 
 const MainContainer = () => {
@@ -57,6 +58,7 @@ const MainContainer = () => {
       <div>
         <NavBar />
         <Title />
+        <NomTracker nominees={nominees} />
 
         <Switch>
           <Route path="/about">
