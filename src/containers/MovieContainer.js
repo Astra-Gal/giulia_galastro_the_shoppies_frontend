@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieList from '../components/MovieList';
+import HowItWorks from '../components/HowItWorks';
 import SearchBar from '../components/SearchBar';
 import GotToFive from '../components/GotToFive';
 
@@ -15,6 +16,7 @@ const MovieContainer = ({
   if (nominees.length <= 4) {
     return (
       <>
+        <HowItWorks />
         <SearchBar searchValue={searchValue} setSearchValue={setSearchValue} />
         <MovieList
           movies={movies}
