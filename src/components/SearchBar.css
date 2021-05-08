@@ -1,11 +1,13 @@
 h2 {
   font-family: 'Barrio', sans-serif;
-  margin: 10px;
+  margin: 10px 10px 15px 0;
 }
 
 .SearchBar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: 5px;
 }
 
 input {
@@ -26,4 +28,10 @@ input:hover {
 input:focus {
   box-shadow: 0 0 7px rgb(58, 216, 71);
   border: 1px solid rgba(42, 199, 55, 1);
+}
+
+@media only screen and (min-width: 600px) {
+  .SearchBar {
+    flex-direction: row;
+  }
 }
