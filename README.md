@@ -1,3 +1,32 @@
+# The Shoppies
+
+#### (App created for application to Shopify Internship, Fall 2021)
+
+## The Brief
+
+Shopify asked for a webpage that can search OMDB for movies, and allow the user to save their favourite films they feel should be up for nomination. When they've selected 5 nominees they should be notified they're finished.
+
+They requested a simple to use interface that makes it easy to:
+
+- Search OMDB and display the results (movies only)
+- Add a movie from the search results to our nomination list
+- View the list of films already nominated
+- Remove a nominee from the nomination list
+
+### Technical requirements
+
+Search results should come from OMDB's API (free API key: http://www.omdbapi.com/apikey.aspx).
+
+1. Each search result should list at least its title, year of release and a button to nominate that film.
+2. Updates to the search terms should update the result list
+3. Movies in search results can be added and removed from the nomination list.
+4. If a search result has already been nominated, disable its nominate button.
+5. Display a banner when the user has 5 nominations.
+
+### A note on security
+
+I know that 'hiding' an API key in a .env file in a React app is not super secure, and I debated making a backend just to hide the key in properly (I would then have had the frontend call the backend as a proxy). I decided that as I was going to make all the code publicly available on GitHub, there was no real security advantage, and as this is a Frontend Internship challenge, making a Backend seemed a step too far!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
