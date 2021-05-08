@@ -19,8 +19,16 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/my-nominations" className="navlink">
-              My Noms
+              My Nominations
             </Link>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Astra-Gal/giulia_galastro_the_shoppies_frontend"
+              className="navlink"
+            >
+              See on GitHub
+            </a>
           </li>
         </ul>
       </nav>
