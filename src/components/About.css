@@ -4,13 +4,15 @@
   justify-content: center;
   align-items: center;
   font-family: 'Roboto Slab', serif;
+  padding: 5px;
 }
 .about h2 {
-  height: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
 }
-
 .about p {
   font-size: smaller;
+  margin-block-end: 2.5em;
 }
 
 .about p a {
@@ -40,19 +42,12 @@
 }
 
 .winner-wrapper {
-  display: grid;
-  margin: 10px 5px;
-  padding: 5px;
-  grid-template-columns: 180px 400px;
-  grid-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .winner-wrapper > h3 {
-  margin-right: 10px;
   font-weight: lighter;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  text-align: left;
 }
 
 .winner-wrapper h3 > span {
@@ -60,11 +55,40 @@
 }
 
 .winner-wrapper img.PrevWinnerImage {
-  grid-column-start: 1;
+  object-fit: cover;
+  width: 250px;
+  height: 400px;
   filter: saturate(1);
+  margin-top: 1.1em;
 }
 
 .winner-wrapper p.PrevWinnerDescription {
-  grid-column-start: 2;
   font-size: 16px;
+}
+
+@media only screen and (min-width: 410px) {
+  .about h2 {
+    height: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .winner-wrapper img.PrevWinnerImage {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .winner-wrapper img.PrevWinnerImage {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .winner-wrapper img.PrevWinnerImage {
+    width: 500px;
+    height: 800px;
+  }
 }

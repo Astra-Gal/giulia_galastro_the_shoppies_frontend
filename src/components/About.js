@@ -28,7 +28,7 @@ const About = () => {
         </p>
         <section className="winner-wrapper">
           <h3>
-            Previous winners of the <span> sac d'or</span>
+            Previous winners of the <span> sac d'or</span> :
           </h3>
           <img
             src={MerchantOfVenice}
