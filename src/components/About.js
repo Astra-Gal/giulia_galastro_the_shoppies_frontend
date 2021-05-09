@@ -7,7 +7,19 @@ const About = () => {
       <h2>A movie award show with a twist...</h2>
       <p>
         (the twist is it's sponsored by
-        <a href="https://shopify.engineering/"> Shopify</a>!)
+        <a
+          href="https://shopify.engineering/"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="ExternalLink"
+        >
+          {' '}
+          Shopify!)
+          <br></br>
+          <span>
+            Opens in new window <span> &#8679;</span>
+          </span>
+        </a>
       </p>
     </div>
   );
