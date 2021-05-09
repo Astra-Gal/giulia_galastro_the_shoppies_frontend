@@ -3,12 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto Slab', serif;
+}
+.about h2 {
+  height: 20px;
 }
 
 .about p {
-  font-family: 'Roboto Slab', serif;
   font-size: smaller;
-  /* display grid, w span on second row? */
 }
 
 .about p a {
@@ -35,4 +37,34 @@
   display: block;
   position: absolute;
   opacity: 1;
+}
+
+.winner-wrapper {
+  display: grid;
+  margin: 10px 5px;
+  padding: 5px;
+  grid-template-columns: 180px 400px;
+  grid-gap: 5px;
+}
+
+.winner-wrapper > h3 {
+  margin-right: 10px;
+  font-weight: lighter;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: left;
+}
+
+.winner-wrapper h3 > span {
+  font-style: italic;
+}
+
+.winner-wrapper img.PrevWinnerImage {
+  grid-column-start: 1;
+  filter: saturate(1);
+}
+
+.winner-wrapper p.PrevWinnerDescription {
+  grid-column-start: 2;
+  font-size: 16px;
 }
