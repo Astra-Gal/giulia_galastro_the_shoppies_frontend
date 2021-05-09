@@ -15,3 +15,8 @@
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
 }
+
+.HowItWorks > ol > li > a {
+  text-decoration: none;
+  color: rgb(21, 107, 21);
+}
