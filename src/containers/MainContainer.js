@@ -6,6 +6,7 @@ import About from '../components/About';
 import MyNoms from '../components/MyNoms';
 import NomTracker from '../components/NomTracker';
 import MovieContainer from './MovieContainer';
+import Footer from '../components/Footer';
 
 const MainContainer = () => {
   const [movies, setMovies] = useState([]);
@@ -86,6 +87,7 @@ const MainContainer = () => {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 };
