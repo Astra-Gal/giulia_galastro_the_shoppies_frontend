@@ -18,7 +18,7 @@ ul.navbar {
   width: 20px;
 }
 
-a.ExternalLink > span {
+.navbar a.ExternalLink > span {
   position: absolute;
   right: -1em;
   margin-right: 1.7em;
@@ -32,9 +32,9 @@ a.ExternalLink > span {
   transition-duration: 0.9s;
 }
 
-a.ExternalLink:hover > span,
-a.ExternalLink:focus > span,
-a.ExternalLink:active > span {
+.navbar a.ExternalLink:hover > span,
+.navbar a.ExternalLink:focus > span,
+.navbar a.ExternalLink:active > span {
   display: block;
   position: absolute;
   opacity: 1;
