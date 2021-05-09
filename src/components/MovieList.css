@@ -31,7 +31,8 @@ li {
 .image-wrapper:focus .green-glow {
   transform: scale(1.1);
   filter: saturate(1);
-  box-shadow: 0 0 26px 20px rgba(149, 191, 71, 255);
+  box-shadow: 0 0 15px 10px greenyellow;
+  overflow-x: visible;
   transition: transform 0.2s;
 }
 
@@ -39,7 +40,8 @@ li {
 .image-wrapper:focus .red-glow {
   transform: scale(1.1);
   filter: saturate(1);
-  box-shadow: 0 0 26px 20px crimson;
+  box-shadow: 0 0 15px 10px red;
+  overflow-x: visible;
   transition: transform 0.2s;
 }
 
@@ -52,10 +54,10 @@ li {
   opacity: 0;
   color: white;
   background: rgba(25, 31, 24, 0.639);
-  width: 110px;
+  width: 160px;
   transition: 0.5s ease;
   bottom: 0;
-  font-size: 15px;
+  font-size: 18px;
   padding: 20px;
   font-family: 'Roboto Slab', serif;
 }
@@ -67,8 +69,8 @@ li {
 
 img {
   object-fit: cover;
-  width: 150px;
-  height: 225px;
+  width: 200px;
+  height: 300px;
   filter: saturate(0);
   transition: 0.3s ease all;
 }
@@ -82,13 +84,13 @@ img .nominate-wrapper:hover {
 }
 
 .titleYear {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 450px) {
   .MovieList > ul {
     flex-direction: row;
-    height: 300px;
+    height: 400px;
     align-items: center;
   }
 }
