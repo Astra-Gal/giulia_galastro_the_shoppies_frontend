@@ -10,7 +10,7 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
   const nomineeNodes = nominees.map((nominee, index) => {
     return (
       <li key={index}>
-        <div
+        <button
           onClick={() => handleRemoveNomination(nominee)}
           className="image-wrapper"
         >
@@ -23,7 +23,7 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
               </div>
             </div>
           </div>
-        </div>
+        </button>
       </li>
     );
   });

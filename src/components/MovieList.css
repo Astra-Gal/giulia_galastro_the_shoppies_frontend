@@ -11,6 +11,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: visible;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
@@ -22,19 +23,24 @@ li {
 
 .image-wrapper {
   position: relative;
+  border: none;
   transition: transform 0.2s;
 }
 
-.image-wrapper:hover .green-glow {
+.image-wrapper:hover .green-glow,
+.image-wrapper:focus .green-glow {
   transform: scale(1.1);
   filter: saturate(1);
-  box-shadow: 0 0 7px rgb(58, 216, 71);
+  box-shadow: 0 0 26px 20px rgba(149, 191, 71, 255);
+  transition: transform 0.2s;
 }
 
-.image-wrapper:hover .red-glow {
+.image-wrapper:hover .red-glow,
+.image-wrapper:focus .red-glow {
   transform: scale(1.1);
   filter: saturate(1);
-  box-shadow: 0 0 7px red;
+  box-shadow: 0 0 26px 20px crimson;
+  transition: transform 0.2s;
 }
 
 .image-wrapper .nominate-wrapper {
@@ -54,7 +60,8 @@ li {
   font-family: 'Roboto Slab', serif;
 }
 
-.image-wrapper:hover .nominate-wrapper {
+.image-wrapper:hover .nominate-wrapper,
+.image-wrapper:focus .nominate-wrapper {
   opacity: 1;
 }
 
@@ -70,6 +77,10 @@ img:hover {
   filter: saturate(1);
 }
 
+img .nominate-wrapper:hover {
+  filter: saturate(1);
+}
+
 .titleYear {
   font-size: 10px;
 }
@@ -77,5 +88,7 @@ img:hover {
 @media only screen and (min-width: 450px) {
   .MovieList > ul {
     flex-direction: row;
+    height: 300px;
+    align-items: center;
   }
 }

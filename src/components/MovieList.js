@@ -24,7 +24,7 @@ const MovieList = ({
     if (!alreadyInNominees) {
       return (
         <li key={index}>
-          <div
+          <button
             onClick={() => handleNomination(movie)}
             className="image-wrapper"
           >
@@ -37,26 +37,26 @@ const MovieList = ({
                 </div>
               </div>
             </div>
-          </div>
+          </button>
         </li>
       );
     } else {
       return (
         <li key={index}>
-          <div
+          <button
             onClick={() => handleRemoveNomination(movie)}
             className="image-wrapper"
           >
             <div className="red-glow">
               <img src={movie.Poster} alt={movie.Title} />
               <div className="nominate-wrapper">
-                Remove Nom?
+                Remove?
                 <div className="titleYear">
                   {movie.Title}({movie.Year})
                 </div>
               </div>
             </div>
-          </div>
+          </button>
         </li>
       );
     }
