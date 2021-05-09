@@ -17,7 +17,7 @@ const MyNoms = ({ nominees, handleRemoveNomination, loading }) => {
           <div className="red-glow">
             <img src={nominee.Poster} alt={nominee.Title} />
             <div className="nominate-wrapper">
-              Remove Nom?
+              Remove?
               <div className="titleYear">
                 {nominee.Title}({nominee.Year})
               </div>
