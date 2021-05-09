@@ -47,7 +47,8 @@
   align-items: center;
 }
 .winner-wrapper > h3 {
-  font-weight: lighter;
+  font-weight: light;
+  margin-top: 1em;
 }
 
 .winner-wrapper h3 > span {
