@@ -2,7 +2,7 @@
 
 ## The Brief
 
-The (fictitious) Silver Globe movie awards asked for a webpage that can search OMDB for movies, and allow the user to save their favourite films they feel should be up for nomination. When they've selected 5 nominees they should be notified they're finished. ([The website is deployed over here](youthful-wilson-d7410d.netlify.app/)).
+The (fictitious) Silver Globe movie awards asked for a webpage that can search OMDB for movies, and allow the user to save their favourite films they feel should be up for nomination. When they've selected 5 nominees they should be notified they're finished. ([The website is deployed over here](https://youthful-wilson-d7410d.netlify.app)).
 
 They requested a simple to use interface that makes it easy to:
 
