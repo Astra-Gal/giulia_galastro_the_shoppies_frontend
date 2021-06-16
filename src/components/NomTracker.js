@@ -5,7 +5,7 @@ const NomTracker = ({ nominees }) => {
   if (nominees.length === 0) {
     return (
       <div className="NomTracker">
-        <p>Make 5 nominations for the prestigious Shoppie Awards!</p>
+        <p>Make 5 nominations for the prestigious Silver Globe Awards!</p>
       </div>
     );
   } else if (nominees.length < 4) {
