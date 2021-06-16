@@ -2,7 +2,6 @@ import React from 'react';
 import MerchantOfVenice from '../assets/MerchantOfVenice.png';
 import LittleShop from '../assets/LittleShop.png';
 import LoveForSale from '../assets/LoveForSale.png';
-import CantBuyMeLove from '../assets/CantBuyMeLove.png';
 import './About.css';
 
 const About = () => {
